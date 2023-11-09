@@ -16,7 +16,6 @@ namespace API.DTOs
         [Required]
         public string ReferenceNumber { get; set; }
 
-        [Range(1, 5)]
         public double Rating { get; set; }
 
         [Required]

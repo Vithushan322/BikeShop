@@ -80,6 +80,17 @@ namespace API.Controllers
         #endregion
 
         #region POST
+        [HttpPost]
+        public async Task<ActionResult<BikeDTO>> AddBike(CreateBikeDTO createBikeDTO)
+        {
+            var bike = _mapper.Map<Bike>(createBikeDTO);
+            _context.Bikes.Add(bike);
+            await _context.SaveChangesAsync();
+
+            var bikeDTO = _mapper.Map<BikeDTO>(bike);
+            return Ok(bikeDTO);
+        }
+
         [HttpPost("add-photo/{bikeId}")]
         public async Task<ActionResult<PhotoDTO>> AddPhoto(int bikeId, IFormFile file)
         {

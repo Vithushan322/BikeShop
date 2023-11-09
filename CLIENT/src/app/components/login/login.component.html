@@ -1,0 +1,38 @@
+<div class="background d-flex">
+    <div class="inner-container">
+        <div class="top-header">
+            <header>Login</header>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()" autocomplete="off">
+            <div class="input-field">
+                <input 
+                    class="input" 
+                    type="text" 
+                    placeholder="Email" 
+                    formControlName="email">
+                <mat-icon>person</mat-icon>
+            </div>
+            <div class="input-field">
+                <input 
+                    class="input" 
+                    type="{{isPasswordHidden ? 'password' : 'text'}}" 
+                    placeholder="Password"
+                    formControlName="password">
+                <mat-icon (click)="isPasswordHidden = !isPasswordHidden">{{isPasswordHidden ? 'visibility' :
+                    'visibility_off'}}</mat-icon>
+            </div>
+            <div class="bottom d-flex">
+                <div class="left">
+                    <input type="checkbox" id="check" [(ngModel)]="isRememberMe" [ngModelOptions]="{standalone: true}">
+                    <label for="check">Remember Me</label>
+                </div>
+                <div class="right">
+                    <label>Forgot password?</label>
+                </div>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" [ngClass]="{'submit-disabled': !loginForm.valid}" value="Login" [disabled]="!loginForm.valid">
+            </div>
+        </form>
+    </div>
+</div>

@@ -11,6 +11,7 @@ namespace API.Helper
             CreateMap<Bike, BikeDTO>();
             CreateMap<Bike, UpdateBikeDTO>();
             CreateMap<UpdateBikeDTO, Bike>();
+            CreateMap<CreateBikeDTO, Bike>();
 
             CreateMap<Photo, PhotoDTO>();
             CreateMap<AppUser, UserDTO>();
