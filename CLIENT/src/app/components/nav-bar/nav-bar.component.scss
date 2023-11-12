@@ -1,0 +1,66 @@
+* {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+mat-icon {
+    font-family: "Material Icons" !important;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+
+    .navbar {
+        width: 100%;
+        height: 60px;
+        // max-width: 1200px;
+        // margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        // cursor: pointer;
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.7rem;
+            cursor: pointer;
+        }
+
+        .links {
+            gap: 2rem;
+
+            .link {
+                cursor: pointer;
+            }
+        }
+        .profile {
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+
+            .user-profile{
+                padding-right: 5px !important;
+            }
+            
+            .log-out{
+                display: contents;
+            }
+
+            .toggle_btn {
+                display: none;
+                // padding-left: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .link {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: contents !important;
+    }
+}

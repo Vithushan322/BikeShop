@@ -1,2 +1,24 @@
-<p>nav-bar works!</p>
-<button (click)="logout()">LOGOUT</button>
+<header>
+    <div class="container navbar d-flex">
+        <div class="logo pe-auto">Bike Shop></div>
+        <div class="links d-flex">
+            <div class="link" [routerLink]="'/dashboard/inventory'">Inventory</div>
+            <div class="link" [routerLink]="'/dashboard/offers'">Offers</div>
+            <div class="link" [routerLink]="'/dashboard/analytics'">Analytics</div>
+            <div class="link" [routerLink]="'/dashboard/suppliers'">Suppliers</div>
+        </div>
+
+        <!-- <a href="#" class="action_btn">Get Started</a> -->
+        <div class="profile d-flex">
+            <div class="user-profile" *ngIf="(accountService.currentUser$ | async) as user">
+                {{user.firstName | titlecase}}
+            </div>
+            <div class="log-out" (click)="logout()">
+                <mat-icon>logout</mat-icon>
+            </div>
+            <div class="toggle_btn">
+                <mat-icon>menu</mat-icon>
+            </div>
+        </div>
+    </div>
+</header>

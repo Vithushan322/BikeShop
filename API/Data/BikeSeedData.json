@@ -1,168 +1,182 @@
 [
   {
-    "Name": "ACCEL",
-    "Description": "Aute quis excepteur voluptate sunt culpa adipisicing laborum fugiat est commodo.",
-    "ReferenceNumber": "258676444",
-    "Rating": 1.35,
-    "Price": 891.79,
-    "Color": "blue",
-    "Location": "UK",
+    "Name": "CANOPOLY",
+    "Description": "Velit aute excepteur id eu nisi culpa duis cillum. Magna adipisicing nisi voluptate velit veniam ipsum ea ad et culpa adipisicing fugiat Lorem. Occaecat reprehenderit qui sint laboris dolore occaecat amet et culpa consequat nostrud cillum sunt esse. Cupidatat aliquip irure duis qui ipsum culpa quis ut est eu cillum proident ipsum exercitation. In non anim sit cupidatat. Sunt aliquip consequat irure pariatur ex exercitation in veniam qui aliquip nostrud. Labore id sit dolor aliqua.\r\n",
+    "ReferenceNumber": "899344277",
+    "Rating": 4.59,
+    "Price": 744.54,
+    "Color": "White",
+    "Location": "Ontario",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/41.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/40.jpg",
         "IsMain": true
       }
     ],
-    "BikeType": "mountain",
-    "Created": "2023-04-27"
-  },
-  {
-    "Name": "RECRITUBE",
-    "Description": "Esse adipisicing irure ullamco laborum deserunt sint elit ipsum ex.",
-    "ReferenceNumber": "232258659",
-    "Price": 938.91,
-    "Color": "blue",
-    "Location": "UK",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/88.jpg",
-        "IsMain": true
-      }
-    ],
-    "BikeType": "general",
-    "Created": "2022-05-03"
-  },
-  {
-    "Name": "DUFLEX",
-    "Description": "Nisi pariatur tempor voluptate id culpa elit ea Lorem consequat ipsum mollit.",
-    "ReferenceNumber": "463556954",
-    "Rating": 4.88,
-    "Price": 9.43,
-    "Color": "brown",
-    "Location": "USA",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/15.jpg",
-        "IsMain": true
-      }
-    ],
-    "BikeType": "mountain",
-    "Created": "2021-05-26"
-  },
-  {
-    "Name": "RETROTEX",
-    "Description": "Esse non dolore enim voluptate voluptate reprehenderit eu dolore duis.",
-    "ReferenceNumber": "556626405",
-    "Price": 361.01,
-    "Color": "brown",
-    "Location": "USA",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/96.jpg",
-        "IsMain": true
-      }
-    ],
-    "BikeType": "mountain",
-    "Created": "2022-01-23"
-  },
-  {
-    "Name": "ACUSAGE",
-    "Description": "Ad commodo id fugiat elit. Exercitation occaecat magna cillum id.",
-    "ReferenceNumber": "401803557",
-    "Rating": 2.14,
-    "Price": 361.59,
-    "Color": "green",
-    "Location": "Australia",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/17.jpg",
-        "IsMain": true
-      }
-    ],
-    "BikeType": "general",
-    "Created": "2022-05-25"
-  },
-  {
-    "Name": "OMNIGOG",
-    "Description": "Aliquip Lorem eiusmod eu dolor non elit cupidatat qui Lorem aute duis.",
-    "ReferenceNumber": "961222006",
-    "Price": 393.92,
-    "Color": "black",
-    "Location": "UK",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/13.jpg",
-        "IsMain": true
-      }
-    ],
-    "BikeType": "sport",
-    "Created": "2022-09-22"
-  },
-  {
-    "Name": "FUELWORKS",
-    "Description": "Velit consequat velit nisi minim. Est aliquip pariatur ea eiusmod nisi.",
-    "ReferenceNumber": "261074011",
-    "Rating": 1.2,
-    "Price": 913.64,
-    "Color": "brown",
-    "Location": "Australia",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/31.jpg",
-        "IsMain": true
-      }
-    ],
-    "BikeType": "general",
-    "Created": "2021-05-27"
+    "BikeType": "Sport",
+    "Created": "2023-04-08",
+    "Quantity": 9662
   },
   {
     "Name": "EMTRAC",
-    "Description": "Consectetur in enim non cupidatat aliquip.",
-    "ReferenceNumber": "565723659",
-    "Rating": 4.51,
-    "Price": 586.83,
-    "Color": "black",
-    "Location": "USA",
+    "Description": "Irure est consectetur labore eu ea duis occaecat nisi voluptate in aliquip qui. Duis do magna velit laborum. Ea ea ad fugiat magna. Irure Lorem cillum id aute. Adipisicing labore ullamco amet voluptate laboris adipisicing anim enim nostrud proident aliqua ullamco ad. Nulla nisi minim est labore do consequat.\r\n",
+    "ReferenceNumber": "112789210",
+    "Rating": 2.4,
+    "Price": 432.53,
+    "Color": "Black",
+    "Location": "Nova Scotia",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/43.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/60.jpg",
         "IsMain": true
       }
     ],
-    "BikeType": "kid",
-    "Created": "2023-03-08"
+    "BikeType": "General",
+    "Created": "2023-02-23",
+    "Quantity": 2904
   },
   {
-    "Name": "EXERTA",
-    "Description": "Esse anim enim sunt labore ullamco. Cillum ea incididunt eu in officia Lorem deserunt est elit nostrud. ",
-    "ReferenceNumber": "992970825",
-    "Rating": 4.7,
-    "Price": 488.51,
-    "Color": "brown",
-    "Location": "Australia",
+    "Name": "NORSUP",
+    "Description": "Esse nulla Lorem dolor labore elit aliquip ad voluptate sint exercitation nostrud id. Pariatur quis elit mollit id magna est amet veniam ea. Ut mollit velit nulla aliquip labore cupidatat irure. Pariatur officia mollit enim aliqua sit nulla commodo in. Magna aliquip eiusmod duis non ex aute ipsum veniam.\r\n",
+    "ReferenceNumber": "856431935",
+    "Rating": 3.74,
+    "Price": 260.94,
+    "Color": "Black",
+    "Location": "Alberta",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/8.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/64.jpg",
         "IsMain": true
       }
     ],
-    "BikeType": "kid",
-    "Created": "2022-12-31"
+    "BikeType": "Kid",
+    "Created": "2023-06-12",
+    "Quantity": 4797
   },
   {
-    "Name": "MAGNEATO",
-    "Description": "Aliquip in Lorem tempor minim dolor est aliqua ex anim laborum. Dolor nostrud elit enim nisi irure.",
-    "ReferenceNumber": "148242693",
-    "Price": 266.2,
-    "Color": "brown",
-    "Location": "USA",
+    "Name": "BEADZZA",
+    "Description": "Amet pariatur occaecat do eu consectetur. Excepteur sunt fugiat proident incididunt. Incididunt est nulla dolor eu adipisicing elit cupidatat nostrud adipisicing.\r\n",
+    "ReferenceNumber": "749709670",
+    "Rating": 4.52,
+    "Price": 338.51,
+    "Color": "Blue",
+    "Location": "Quebec",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/57.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/83.jpg",
         "IsMain": true
       }
     ],
-    "BikeType": "kid",
-    "Created": "2021-01-05"
+    "BikeType": "Mountain",
+    "Created": "2023-01-05",
+    "Quantity": 9296
+  },
+  {
+    "Name": "MEDESIGN",
+    "Description": "Dolore nulla aliquip ad nisi culpa irure ipsum ad consectetur et magna consectetur. Et laboris aliqua laboris cillum. Exercitation irure ullamco dolore voluptate occaecat velit consequat duis occaecat. Eiusmod fugiat nisi ea reprehenderit laborum ullamco laborum officia magna non. Officia esse tempor in enim sint fugiat.\r\n",
+    "ReferenceNumber": "572082856",
+    "Rating": 0.72,
+    "Price": 123.08,
+    "Color": "White",
+    "Location": "Ontario",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/20.jpg",
+        "IsMain": true
+      }
+    ],
+    "BikeType": "Mountain",
+    "Created": "2023-04-14",
+    "Quantity": 6474
+  },
+  {
+    "Name": "ENTALITY",
+    "Description": "Do ut eu enim laboris aute sit nulla ullamco qui sunt. Occaecat sint aliqua in culpa non occaecat elit laborum. Sit aliquip elit aliqua irure anim aliqua in. Qui velit veniam eu tempor quis excepteur in ut sint voluptate amet. Nisi non mollit dolore enim amet ea sint mollit magna enim veniam consectetur proident. Laborum laborum Lorem incididunt officia exercitation pariatur proident reprehenderit.\r\n",
+    "ReferenceNumber": "227013346",
+    "Rating": 3.12,
+    "Price": 432.94,
+    "Color": "Green",
+    "Location": "Quebec",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/30.jpg",
+        "IsMain": true
+      }
+    ],
+    "BikeType": "Kid",
+    "Created": "2023-04-23",
+    "Quantity": 3568
+  },
+  {
+    "Name": "FIBRODYNE",
+    "Description": "Consequat nulla do consectetur mollit duis labore laboris do eiusmod velit sint anim voluptate enim. Enim officia do est enim eu esse culpa. Elit anim non minim incididunt. Exercitation excepteur consequat duis culpa. Dolor ullamco ad nulla id ea aliqua est duis.\r\n",
+    "ReferenceNumber": "543062986",
+    "Rating": 1.41,
+    "Price": 564.79,
+    "Color": "Blue",
+    "Location": "Quebec",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/18.jpg",
+        "IsMain": true
+      }
+    ],
+    "BikeType": "Sport",
+    "Created": "2023-01-16",
+    "Quantity": 7280
+  },
+  {
+    "Name": "MUSIX",
+    "Description": "Cillum commodo ipsum ipsum labore eiusmod ex velit. Sint velit Lorem id magna enim consectetur quis tempor pariatur veniam laboris labore officia. Consequat aute eu laborum anim aliqua nisi voluptate incididunt. Non laboris id cupidatat magna laboris occaecat consectetur anim esse laborum nostrud. Sit adipisicing quis eu do reprehenderit laborum. Occaecat incididunt aliquip consectetur eu.\r\n",
+    "ReferenceNumber": "790054654",
+    "Rating": 3,
+    "Price": 412.5,
+    "Color": "Red",
+    "Location": "Alberta",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/76.jpg",
+        "IsMain": true
+      }
+    ],
+    "BikeType": "Sport",
+    "Created": "2023-02-04",
+    "Quantity": 1472
+  },
+  {
+    "Name": "DECRATEX",
+    "Description": "Exercitation adipisicing et irure ut aliquip in duis sint aliquip voluptate laborum. Sunt dolor non est nisi eu voluptate reprehenderit officia nulla cillum sit in minim aliqua. Do eiusmod dolor consequat veniam exercitation reprehenderit. Deserunt dolor et ullamco nostrud sint tempor duis ea. Consequat duis sint exercitation eu culpa. Laborum Lorem adipisicing nisi qui excepteur.\r\n",
+    "ReferenceNumber": "450193700",
+    "Rating": 0.39,
+    "Price": 113.13,
+    "Color": "White",
+    "Location": "Ontario",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/70.jpg",
+        "IsMain": true
+      }
+    ],
+    "BikeType": "General",
+    "Created": "2023-06-12",
+    "Quantity": 7817
+  },
+  {
+    "Name": "ENDIPINE",
+    "Description": "Officia adipisicing proident proident irure eu nisi dolor sit eiusmod ut deserunt nulla. Ipsum incididunt proident consequat id officia velit. Nulla ullamco pariatur sunt mollit. Adipisicing fugiat voluptate sint nostrud. Anim consectetur voluptate commodo ullamco fugiat quis elit voluptate sunt. Pariatur tempor Lorem tempor aliquip veniam sit. Officia aute nostrud ex amet.\r\n",
+    "ReferenceNumber": "873527153",
+    "Rating": 4.03,
+    "Price": 677.79,
+    "Color": "Blue",
+    "Location": "Ontario",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/93.jpg",
+        "IsMain": true
+      }
+    ],
+    "BikeType": "Kid",
+    "Created": "2023-06-27",
+    "Quantity": 9632
   }
 ]

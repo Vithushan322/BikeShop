@@ -8,11 +8,12 @@
         public string ReferenceNumber { get; set; }
         public double Rating { get; set; }
         public double Price { get; set; }
-        public double DicountedPrice { get; set; }
+        public double DiscountedPrice { get; set; }
         public string Color { get; set; }
         public List<Photo> Photos { get; set; } = new();
         public string BikeType { get; set; }
         public DateTime Created { get; set; } = DateTime.UtcNow;
         public string Location { get; set; }
+        public int Quantity { get; set; }
     }
 }

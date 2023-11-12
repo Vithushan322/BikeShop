@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { authGuard } from './shared/authguard.guard';
+import { InventoryComponent } from './components/dashboard/inventory/inventory.component';
+import { OffersComponent } from './components/dashboard/offers/offers.component';
+import { AnalyticsComponent } from './components/dashboard/analytics/analytics.component';
+import { SuppliersComponent } from './components/dashboard/suppliers/suppliers.component';
 
 const routes: Routes = [
 
@@ -18,7 +22,24 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-    canActivate: [authGuard]
+    canActivate: [authGuard],
+    children: [
+      {
+        path: '', component: InventoryComponent
+      },
+      {
+        path: 'inventory', component: InventoryComponent
+      },
+      {
+        path: 'analytics', component: AnalyticsComponent
+      },
+      {
+        path: 'offers', component: OffersComponent
+      },
+      {
+        path: 'suppliers', component: SuppliersComponent
+      }
+    ]
   },
   {
     path: '**',

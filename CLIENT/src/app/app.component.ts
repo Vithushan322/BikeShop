@@ -12,7 +12,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   @HostListener('window:unload', ['$event'])
   onWindowClose(event: any): void {
-    localStorage.clear();
+    // localStorage.clear();
   }
 
   constructor(private accountService: AccountService) {
@@ -21,11 +21,10 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.setCurrentUser();
   }
-  
+
   ngOnDestroy(): void {
     // localStorage.clear();
   }
-
 
   setCurrentUser() {
     if (!!localStorage.getItem('user')) {

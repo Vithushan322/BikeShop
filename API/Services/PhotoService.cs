@@ -30,9 +30,11 @@ namespace API.Services
                 var oploadParam = new ImageUploadParams
                 {
                     File = new FileDescription(file.FileName, stream),
-                    Transformation = new Transformation().AspectRatio("1.0").Crop("fill").Gravity("auto"),
+                    Transformation = new Transformation(),
                     Folder = "BikeApp"
                 };
+
+                //.AspectRatio("1.0").Crop("fill").Gravity("auto")
                 uploadResult = await _cloudinary.UploadAsync(oploadParam);
             }
 

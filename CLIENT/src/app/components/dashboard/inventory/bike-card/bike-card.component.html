@@ -1,0 +1,37 @@
+<div class="bike-card" *ngIf="bike">
+    <div class="image-area">
+        <img src="{{bike.photoUrl}}" alt=""> <!-- ToDo if photo is not available-->
+        <div class="action-buttons animate d-flex px-2">
+            <div class="edit button" tooltip="Edit" placement="right"><mat-icon>edit</mat-icon></div>
+            <div class="delete button" tooltip="Delete" placement="left"><mat-icon>delete</mat-icon></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="header d-flex">
+            <div class="name">
+                {{bike.name | titlecase}}
+            </div>
+            <div class="rating d-flex" tooltip="Rating" placement="left">
+                <mat-icon>star</mat-icon>{{bike.rating | number: '1.0-1'}}
+            </div>
+        </div>
+        <!-- <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </div> -->
+        <div class="footer d-flex">
+            <div class="quantity d-flex">
+                <mat-icon>shopping_cart</mat-icon>
+                <div>Availability ({{bike.quantity}})</div>
+            </div>
+            <div class="price d-flex">
+                <div class="discounted-price" *ngIf="bike.discountedPrice > 0">
+                    {{bike.discountedPrice | currency}}
+                </div>
+                <div class="normal-price" [ngClass]="{'normal-discounted-price': bike.discountedPrice > 0}">
+                    {{bike.price | currency}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

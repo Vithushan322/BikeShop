@@ -21,7 +21,7 @@ namespace API.DTOs
         [Required]
         public double Price { get; set; }
 
-        public double DicountedPrice { get; set; }
+        public double DiscountedPrice { get; set; }
 
         [Required]
         public string Color { get; set; }
@@ -35,6 +35,11 @@ namespace API.DTOs
 
         [Required]
         public string Location { get; set; }
+
+        [Required]
+        [Range(1, 1000)]
+        public int Quantity { get; set; }
+
     }
 
     public class UpdateBikeDTO
@@ -44,9 +49,12 @@ namespace API.DTOs
         public string ReferenceNumber { get; set; }
         public double Rating { get; set; }
         public double Price { get; set; }
+        public double DiscountedPrice { get; set; }
+
         public string Color { get; set; }
         public string BikeType { get; set; }
         public string Location { get; set; }
+        public int Quantity { get; set; }
     }
 
     public class BikeDTO : CreateBikeDTO
@@ -54,5 +62,7 @@ namespace API.DTOs
         public int Id { get; set; }
 
         public new List<PhotoDTO> Photos { get; set; }
+
+        public string PhotoUrl { get; set; }
     }
 }
