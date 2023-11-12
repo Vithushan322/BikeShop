@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { JwtInterceptor } from './interceptors/jwt.interceptor';
+import { LoadingInterceptor } from './interceptors/loading.interceptor';
 
+import { SharedModule } from './modules/shared.module';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { JwtInterceptor } from './interceptors/jwt.interceptor';
-import { ToastrModule } from 'ngx-toastr';
 import { InventoryComponent } from './components/dashboard/inventory/inventory.component';
 import { OffersComponent } from './components/dashboard/offers/offers.component';
 import { AnalyticsComponent } from './components/dashboard/analytics/analytics.component';
 import { SuppliersComponent } from './components/dashboard/suppliers/suppliers.component';
 import { BikeCardComponent } from './components/dashboard/inventory/bike-card/bike-card.component';
-import { PaginationModule } from 'ngx-bootstrap/pagination';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { CreateBikeComponent } from './modals/create-bike/create-bike.component';
+import { ConfirmationModalComponent } from './modals/confirmation-modal/confirmation-modal.component';
 
 @NgModule({
   declarations: [
@@ -31,25 +31,22 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     OffersComponent,
     AnalyticsComponent,
     SuppliersComponent,
-    BikeCardComponent
+    BikeCardComponent,
+    CreateBikeComponent,
+    ConfirmationModalComponent
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule,
-    MatIconModule,
-    MatSlideToggleModule,
-    ToastrModule.forRoot({
-      positionClass: 'toast-bottom-right'
-    }),
-    TooltipModule.forRoot(),
-    PaginationModule
+    ReactiveFormsModule
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })

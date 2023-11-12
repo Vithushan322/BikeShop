@@ -46,6 +46,7 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/font-awesome/css/font-awesome.min.css",
               "./node_modules/ngx-toastr/toastr.css",
+              "./node_modules/ngx-spinner/animations/ball-newton-cradle.css",
               "src/styles.scss"
             ],
             "scripts": []

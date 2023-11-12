@@ -7,7 +7,7 @@ export interface Bike {
     referenceNumber: string;
     price: number;
     color: string;
-    bikeType: number;
+    bikeType: BikeType;
     created: number;
     quantity: number;
     location: number;
@@ -15,4 +15,11 @@ export interface Bike {
     discountedPrice: number;
     rating?: string;
     photos?: Photo[];
+}
+
+export enum BikeType {
+    General = "General",
+    Sport = "Sport",
+    Mountain = "Mountain",
+    Kid = "Kid"
 }

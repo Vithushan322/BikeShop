@@ -49,3 +49,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 * {
   font-family: "Poppins", sans-serif;
 }
+
+.backdropBackground {
+  backdrop-filter: blur(10px);
+  // background-color: #caa4a4;
+  // opacity: 0.7 !important;
+}

@@ -34,7 +34,15 @@ export class BikeService {
     );
   }
 
-  getBike(id: number) {
-    return this.http.get<Bike>(this.baseUsrl + 'bike/' + id);
+  getBike(bikeId: number) {
+    return this.http.get<Bike>(this.baseUsrl + 'bike/' + bikeId);
+  }
+
+  createBike(bike:Bike){
+    return this.http.post<Bike>(this.baseUsrl + 'bike', bike);
+  }
+
+  deleteBike(bikeId: number){
+    return this.http.delete<Bike>(this.baseUsrl + 'bike/' + bikeId);
   }
 }

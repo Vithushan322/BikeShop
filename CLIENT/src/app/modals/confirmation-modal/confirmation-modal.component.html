@@ -1,0 +1,8 @@
+<div mat-dialog-content>
+    <div class="title">{{!!data && data.message ? data.message : 'Confirm?'}}</div>
+
+    <div class="button-area pt-2 d-flex">
+        <button class="cancel" [mat-dialog-close]="false">{{!!data && data.no ? data.no : 'No'}}</button>
+        <button class="create"[mat-dialog-close]="true">{{!!data && data.yes ? data.yes : 'Yes'}}</button>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { Observable, of } from 'rxjs';
-import { User } from 'src/app/models/user';
+import { ConfirmationModalComponent } from 'src/app/modals/confirmation-modal/confirmation-modal.component';
 import { AccountService } from 'src/app/services/account.service';
 
 @Component({
@@ -12,14 +12,30 @@ import { AccountService } from 'src/app/services/account.service';
 export class NavBarComponent implements OnInit {
   constructor(
     public accountService: AccountService,
-    private router: Router) { }
-    
-  ngOnInit(): void {
-    
-  }
+    private router: Router,
+    public dialog: MatDialog) { }
+
+  ngOnInit(): void { }
 
   logout() {
-    this.accountService.removeCurrentUser();
-    this.router.navigate(['login'])
+    const dialogRef = this.dialog.open(ConfirmationModalComponent, {
+      width: '400px',
+      disableClose: true,
+      backdropClass: 'backdropBackground',
+      data: {
+        message: 'Do you want to logout?',
+        yes: 'Logout',
+        no: 'Cancel'
+      },
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.accountService.removeCurrentUser();
+        this.router.navigate(['login'])
+      }
+    });
+
+
   }
 }

@@ -1,0 +1,88 @@
+<!-- <h1 mat-dialog-title>Create a new bike</h1> -->
+<div mat-dialog-content>
+    <div class="title">Create a new bike!</div>
+    <form [formGroup]="createBikeForm" autocomplete="off">
+        <div class="input-field">
+            <input 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('name')?.errors && createBikeForm.get('name')?.touched" 
+                type="text" 
+                formControlName="name" 
+                placeholder="Name">
+        </div>
+        <div class="input-field">
+            <input 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('referenceNumber')?.errors && createBikeForm.get('referenceNumber')?.touched" 
+                type="text" 
+                formControlName="referenceNumber" 
+                placeholder="Reference #">
+        </div>
+        <div class="input-field">
+            <input 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('price')?.errors && createBikeForm.get('price')?.touched" 
+                type="number" 
+                formControlName="price" 
+                placeholder="Price">
+        </div>
+        <div class="input-field">
+            <select 
+                id="biks" 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('bikeType')?.errors && createBikeForm.get('bikeType')?.touched" 
+                formControlName="bikeType">
+                <option value="volvo" *ngFor="let bikeType of keys(bikeTypes)" [value]="bikeType">{{bikeType}}
+                </option>
+            </select>
+        </div>
+        <div class="input-field">
+            <textarea 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('description')?.errors && createBikeForm.get('description')?.touched" 
+                type="text" 
+                formControlName="description"
+                placeholder="Description">
+            </textarea>
+        </div>
+        <div class="input-field">
+            <input 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('quantity')?.errors && createBikeForm.get('quantity')?.touched" 
+                type="number" 
+                formControlName="quantity" 
+                placeholder="Quantity">
+        </div>
+        <div class="input-field">
+            <input 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('color')?.errors && createBikeForm.get('color')?.touched" 
+                type="text" 
+                formControlName="color" 
+                placeholder="Colour">
+        </div>
+        <div class="input-field">
+            <input 
+                class="form-control"
+                [class.is-invalid] = "createBikeForm.get('location')?.errors && createBikeForm.get('location')?.touched" 
+                type="text" 
+                formControlName="location" 
+                placeholder="Location">
+        </div>
+        <div class="button-area pt-2 d-flex">
+            <button 
+                class="cancel" 
+                (click)="onCancel()">
+                    Cancel
+            </button>
+            <button 
+                class="create" 
+                type="submit" 
+                (click)="onSubmit()"
+                [ngClass]="{'create-disbaled': !createBikeForm.valid}"
+                [disabled]="!createBikeForm.valid ? 'disabled': null" >
+                    Create
+            </button>
+        </div>
+    </form>
+</div>

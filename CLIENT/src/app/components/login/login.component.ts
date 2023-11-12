@@ -3,7 +3,7 @@ import { Route, Router } from '@angular/router';
 import { AccountService } from 'src/app/services/account.service';
 
 import {MatIconModule} from '@angular/material/icon';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -21,7 +21,8 @@ export class LoginComponent implements OnInit{
   constructor(
     private accountService: AccountService,
     private router: Router,
-    private toaster: ToastrService) { }
+    private toaster: ToastrService,
+    private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.initializeForm();
@@ -35,9 +36,9 @@ export class LoginComponent implements OnInit{
   }
 
   initializeForm(){
-    this.loginForm = new FormGroup({
-      email: new FormControl('vithushan.vn@gmail.com', [Validators.required,Validators.email]),
-      password: new FormControl('Admin', [Validators.required, Validators.minLength(5),Validators.maxLength(15)])
+    this.loginForm = this.fb.group({
+      email: ['vithushan.vn@gmail.com', [Validators.required,Validators.email]],
+      password: ['Admin', [Validators.required, Validators.minLength(5),Validators.maxLength(15)]]
     });
   }
 
