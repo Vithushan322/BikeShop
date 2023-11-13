@@ -56,7 +56,12 @@ export class NavBarComponent implements OnInit {
     if (!!this.user) {
       this.sharedService.getCurrentWeather(this.user.location).subscribe({
         next: response => {
-          this.currentWeather = response.current;
+
+          this.currentWeather = {
+            temperature: response.main.temp -273.15,
+            feelslike: response.main.feels_like -273.15,
+            icon: `https://openweathermap.org/img/wn/${response.weather[0].icon}.png`,
+          };
         },
         error: error => this.toaster.error(error.error)
       });

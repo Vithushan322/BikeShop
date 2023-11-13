@@ -32,6 +32,10 @@ app.UseHttpsRedirection();
 app.UseCors(builder => builder.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapControllers();
 
 using var scope = app.Services.CreateScope();

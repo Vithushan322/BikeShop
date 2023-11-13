@@ -12,8 +12,8 @@
         <div class="profile d-flex">
             <div class="weather-widget d-flex" *ngIf="!!currentWeather">
                 <div class="weather" tooltip="Actual/ Feels like" placement="left">
-                    {{currentWeather?.temperature}}&deg;C/{{currentWeather?.feelslike}}&deg;C</div>
-                <img src="{{currentWeather?.weather_icons[0]}}" alt="">
+                    {{currentWeather?.temperature | number: '1.0-0'}}&deg;C/{{currentWeather?.feelslike | number: '1.0-0'}}&deg;C</div>
+                <img src="{{currentWeather?.icon}}" alt="">
             </div>
             <div class="user-profile" *ngIf="(accountService.currentUser$ | async) as user">
                 {{user.firstName | titlecase}}

@@ -15,11 +15,11 @@ export class SharedService {
   constructor(private handler: HttpBackend) {
     this.httpClient = new HttpClient(handler);
   }
-
+  
   getCurrentWeather(city: string) {
     let params = new HttpParams();
-    params = params.append('access_key', this.weatherAPIKey);
-    params = params.append('query', city);
+    params = params.append('appid', this.weatherAPIKey);
+    params = params.append('q', city);
     
     return this.httpClient.get<any>(this.baseUrl, { observe: 'response', params }).pipe(
       map(response => {
