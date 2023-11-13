@@ -18,6 +18,7 @@ namespace API.Data
 
             foreach (var bike in bikes)
             {
+                bike.Created = DateTime.SpecifyKind(bike.Created, DateTimeKind.Utc);
                 context.Bikes.Add(bike);
             }
 
