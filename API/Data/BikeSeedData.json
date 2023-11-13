@@ -7,15 +7,10 @@
     "Price": 744.54,
     "Color": "White",
     "Location": "Ontario",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/40.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Sport",
     "Created": "2023-04-08",
-    "Quantity": 9662
+    "Quantity": 96
   },
   {
     "Name": "EMTRAC",
@@ -25,15 +20,10 @@
     "Price": 432.53,
     "Color": "Black",
     "Location": "Nova Scotia",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/60.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "General",
     "Created": "2023-02-23",
-    "Quantity": 2904
+    "Quantity": 29
   },
   {
     "Name": "NORSUP",
@@ -43,15 +33,10 @@
     "Price": 260.94,
     "Color": "Black",
     "Location": "Alberta",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/64.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Kid",
     "Created": "2023-06-12",
-    "Quantity": 4797
+    "Quantity": 47
   },
   {
     "Name": "BEADZZA",
@@ -61,15 +46,10 @@
     "Price": 338.51,
     "Color": "Blue",
     "Location": "Quebec",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/83.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Mountain",
     "Created": "2023-01-05",
-    "Quantity": 9296
+    "Quantity": 92
   },
   {
     "Name": "MEDESIGN",
@@ -79,15 +59,10 @@
     "Price": 123.08,
     "Color": "White",
     "Location": "Ontario",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/20.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Mountain",
     "Created": "2023-04-14",
-    "Quantity": 6474
+    "Quantity": 64
   },
   {
     "Name": "ENTALITY",
@@ -97,15 +72,10 @@
     "Price": 432.94,
     "Color": "Green",
     "Location": "Quebec",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/30.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Kid",
     "Created": "2023-04-23",
-    "Quantity": 3568
+    "Quantity": 35
   },
   {
     "Name": "FIBRODYNE",
@@ -115,15 +85,10 @@
     "Price": 564.79,
     "Color": "Blue",
     "Location": "Quebec",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/18.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Sport",
     "Created": "2023-01-16",
-    "Quantity": 7280
+    "Quantity": 72
   },
   {
     "Name": "MUSIX",
@@ -133,15 +98,10 @@
     "Price": 412.5,
     "Color": "Red",
     "Location": "Alberta",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/76.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Sport",
     "Created": "2023-02-04",
-    "Quantity": 1472
+    "Quantity": 14
   },
   {
     "Name": "DECRATEX",
@@ -151,15 +111,10 @@
     "Price": 113.13,
     "Color": "White",
     "Location": "Ontario",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/70.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "General",
     "Created": "2023-06-12",
-    "Quantity": 7817
+    "Quantity": 78
   },
   {
     "Name": "ENDIPINE",
@@ -169,14 +124,9 @@
     "Price": 677.79,
     "Color": "Blue",
     "Location": "Ontario",
-    "Photos": [
-      {
-        "Url": "https://randomuser.me/api/portraits/women/93.jpg",
-        "IsMain": true
-      }
-    ],
+    "Photos": [],
     "BikeType": "Kid",
     "Created": "2023-06-27",
-    "Quantity": 9632
+    "Quantity": 96
   }
 ]
