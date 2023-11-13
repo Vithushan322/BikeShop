@@ -4,12 +4,13 @@ import { BehaviorSubject, map } from 'rxjs';
 import { User } from '../models/user';
 import { Router } from '@angular/router';
 import { jwtDecode } from "jwt-decode";
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
-  baseUsrl: string = 'https://localhost:7092/api/';
+  baseUrl: string = environment.apiUrl;
 
   private currentUser = new BehaviorSubject<any>(null);
   currentUser$ = this.currentUser.asObservable();
@@ -19,10 +20,12 @@ export class AccountService {
     private router: Router) { }
 
   logIn(model: any, isRememberUser: boolean = true) {
-    return this.http.post<User>(this.baseUsrl + 'account/login', model).pipe(
+    return this.http.post<User>(this.baseUrl + 'account/login', model).pipe(
       map((response: User) => {
         if (response) {
           response.isRememberUser = isRememberUser;
+          console.log(response);
+          
           this.setCurrentUser(response)
           this.router.navigate(['dashboard']);
         }
@@ -45,11 +48,11 @@ export class AccountService {
   }
 
   getUsers() {
-    return this.http.get<any>(this.baseUsrl + 'user');
+    return this.http.get<any>(this.baseUrl + 'user');
   }
 
   getUser(id: number) {
-    return this.http.get<any>(this.baseUsrl + 'user/' + id);
+    return this.http.get<any>(this.baseUrl + 'user/' + id);
   }
 
   IsValidToken(token: string): boolean {

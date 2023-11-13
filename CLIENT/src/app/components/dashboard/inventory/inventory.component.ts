@@ -4,7 +4,7 @@ import { Bike } from 'src/app/models/bike';
 import { Page, Pagination } from 'src/app/models/pagination';
 import { BikeService } from 'src/app/services/bike.service';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { CreateBikeComponent } from '../../../modals/create-bike/create-bike.component';
+import { CreateBikeComponent } from './create-bike/create-bike.component';
 
 @Component({
   selector: 'app-inventory',
@@ -13,7 +13,7 @@ import { CreateBikeComponent } from '../../../modals/create-bike/create-bike.com
 })
 export class InventoryComponent implements OnInit {
   bikes: Bike[] = [];
-  page: Page = new Page(2, 8);
+  page: Page = new Page(1, 8);
   pagination: Pagination | undefined;
 
   constructor(

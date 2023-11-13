@@ -3,12 +3,14 @@ import { Injectable } from '@angular/core';
 import { Bike } from '../models/bike';
 import { Page, PaginatedResult } from '../models/pagination';
 import { map } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BikeService {
-  baseUsrl: string = 'https://localhost:7092/api/';
+  baseUrl: string = environment.apiUrl;
+
   paginatedResult: PaginatedResult<Bike[]> = new PaginatedResult<Bike[]>
 
   constructor(private http: HttpClient) { }
@@ -21,7 +23,7 @@ export class BikeService {
       params = params.append('pageSize', page.pageSize);
     }
 
-    return this.http.get<Bike[]>(this.baseUsrl + 'bike', { observe: 'response', params }).pipe(
+    return this.http.get<Bike[]>(this.baseUrl + 'bike', { observe: 'response', params }).pipe(
       map(response => {
         if (response.body) this.paginatedResult.results = response.body;
 
@@ -35,18 +37,18 @@ export class BikeService {
   }
 
   getBike(bikeId: number) {
-    return this.http.get<Bike>(this.baseUsrl + 'bike/' + bikeId);
+    return this.http.get<Bike>(this.baseUrl + 'bike/' + bikeId);
   }
 
   createBike(bike: Bike) {
-    return this.http.post<Bike>(this.baseUsrl + 'bike', bike);
+    return this.http.post<Bike>(this.baseUrl + 'bike', bike);
   }
 
   updateBike(bikeId: number, bike: Bike) {
-    return this.http.put<Bike>(this.baseUsrl + `bike/${bikeId}`, bike);
+    return this.http.put<Bike>(this.baseUrl + `bike/${bikeId}`, bike);
   }
 
   deleteBike(bikeId: number) {
-    return this.http.delete<Bike>(this.baseUsrl + 'bike/' + bikeId);
+    return this.http.delete<Bike>(this.baseUrl + 'bike/' + bikeId);
   }
 }

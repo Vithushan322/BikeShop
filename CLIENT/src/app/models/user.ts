@@ -3,7 +3,7 @@ export interface User {
     email: string;
     firstName: string;
     lastName: string;
-    location?: string;
+    location: string;
     token?:string;
     isRememberUser?: boolean;
 }

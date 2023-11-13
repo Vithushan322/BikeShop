@@ -39,11 +39,24 @@ header {
             align-items: center;
             justify-content: center;
 
-            .user-profile{
+            .weather-widget {
+                .weather {
+                    line-height: 25px;
+                    align-items: center;
+                    justify-content: center;
+                    padding-right: 5px;
+                }
+                img {
+                    height: 25px;
+                    width: 25px;
+                    margin-right: 10px;
+                }
+            }
+            .user-profile {
                 padding-right: 5px !important;
             }
-            
-            .log-out{
+
+            .log-out {
                 display: contents;
             }
 

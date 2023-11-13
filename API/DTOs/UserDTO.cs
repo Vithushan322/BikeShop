@@ -38,6 +38,7 @@ namespace API.DTOs
         [Required]
         public string LastName { get; set; }
 
+        [Required]
         [StringLength(maximumLength: 20)]
         public string Location { get; set; }
     }

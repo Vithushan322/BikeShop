@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
 import { ConfirmationModalComponent } from 'src/app/components/shared/confirmation-modal/confirmation-modal.component';
-import { EditBikeComponent } from 'src/app/modals/edit-bike/edit-bike.component';
+import { EditBikeComponent } from 'src/app/components/dashboard/inventory/edit-bike/edit-bike.component';
 import { Bike } from 'src/app/models/bike';
 import { BikeService } from 'src/app/services/bike.service';
 

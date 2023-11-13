@@ -1,6 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, EventEmitter, Inject, OnInit, Output } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
-import { ConfirmationModalComponent } from '../../components/shared/confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from '../../../shared/confirmation-modal/confirmation-modal.component';
 import { Bike, BikeType } from 'src/app/models/bike';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BikeService } from 'src/app/services/bike.service';
@@ -12,6 +12,8 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./edit-bike.component.scss']
 })
 export class EditBikeComponent implements OnInit {
+  @Output() bikeUpdate = new EventEmitter();
+
   bikeTypes = BikeType;
   keys = Object.keys;
 

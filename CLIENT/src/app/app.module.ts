@@ -18,9 +18,11 @@ import { OffersComponent } from './components/dashboard/offers/offers.component'
 import { AnalyticsComponent } from './components/dashboard/analytics/analytics.component';
 import { SuppliersComponent } from './components/dashboard/suppliers/suppliers.component';
 import { BikeCardComponent } from './components/dashboard/inventory/bike-card/bike-card.component';
-import { CreateBikeComponent } from './modals/create-bike/create-bike.component';
+import { CreateBikeComponent } from './components/dashboard/inventory/create-bike/create-bike.component';
 import { ConfirmationModalComponent } from './components/shared/confirmation-modal/confirmation-modal.component';
-import { EditBikeComponent } from './modals/edit-bike/edit-bike.component';
+import { EditBikeComponent } from './components/dashboard/inventory/edit-bike/edit-bike.component';
+import { PhotoEditorComponent } from './components/shared/photo-editor/photo-editor.component';
+import { ComingSoonComponent } from './components/shared/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { EditBikeComponent } from './modals/edit-bike/edit-bike.component';
     BikeCardComponent,
     CreateBikeComponent,
     ConfirmationModalComponent,
-    EditBikeComponent
+    EditBikeComponent,
+    PhotoEditorComponent,
+    ComingSoonComponent
   ],
   imports: [
     SharedModule,

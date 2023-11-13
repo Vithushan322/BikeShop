@@ -10,6 +10,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ToastrModule } from 'ngx-toastr';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [],
@@ -22,7 +23,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     PaginationModule,
     NgxSpinnerModule.forRoot({ type: 'ball-newton-cradle' }),
     MatDialogModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    FileUploadModule
   ],
   exports: [
     MatIconModule,
@@ -32,7 +34,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     TooltipModule,
     PaginationModule,
     NgxSpinnerModule,
-    TabsModule
+    TabsModule,
+    FileUploadModule
   ]
 })
 export class SharedModule { }

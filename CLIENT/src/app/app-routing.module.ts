@@ -7,7 +7,7 @@ import { InventoryComponent } from './components/dashboard/inventory/inventory.c
 import { OffersComponent } from './components/dashboard/offers/offers.component';
 import { AnalyticsComponent } from './components/dashboard/analytics/analytics.component';
 import { SuppliersComponent } from './components/dashboard/suppliers/suppliers.component';
-import { CreateBikeComponent } from './modals/create-bike/create-bike.component';
+import { CreateBikeComponent } from './components/dashboard/inventory/create-bike/create-bike.component';
 
 const routes: Routes = [
 

@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dial
 import { ToastrService } from 'ngx-toastr';
 import { BikeType } from 'src/app/models/bike';
 import { BikeService } from 'src/app/services/bike.service';
-import { ConfirmationModalComponent } from '../../components/shared/confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from '../../../shared/confirmation-modal/confirmation-modal.component';
 
 @Component({
   selector: 'app-create-bike',

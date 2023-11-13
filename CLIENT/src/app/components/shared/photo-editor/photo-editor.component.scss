@@ -1,0 +1,76 @@
+img.img-thumbnail {
+    height: 150px;
+    width: 100% !important;
+    margin-bottom: 2px;
+}
+
+.image-area {
+    position: relative;
+
+    .button {
+        cursor: pointer;
+        position: absolute;
+        bottom: 12px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .delete {
+        right: 20px;
+        color: #fff;
+        background-color: #dc3545;
+    }
+
+    .main {
+        left: 20px;
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+}
+
+.nv-file-over {
+    border: dotted 3px red;
+}
+
+input[type="file"] {
+    color: transparent;
+}
+
+.drop-zone{
+    width: 105px;
+}
+
+.button-area {
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        width: 32%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .remove {
+        border: 2px solid red;
+        background-color: red;
+        color: #fff;
+        margin-right: 2px;
+    }
+
+    .upload {
+        background-color: green;
+        border: 2px solid green;
+        color: #fff;
+        margin-left: 2px;
+    }
+
+    .close{
+        background-color: orange;
+        border: 2px solid orange;
+        color: #fff;
+    }
+}
