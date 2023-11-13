@@ -1,9 +1,9 @@
 <div class="bike-card" *ngIf="bike">
     <div class="image-area">
-        <!-- <img src="{{bike.photoUrl}}" alt=""> ToDo if photo is not available -->
-        <img [src]="!!bike.photoUrl ? bike.photoUrl : '/assets/NoImageFound.jpg'"> <!-- ToDo if photo is not available-->
+        <!-- <img [src]="!!bike.photoUrl ? bike.photoUrl : '/assets/NoImageFound.jpg'"> -->
+        <img [src]="bike.photoUrl || '/assets/NoImageFound.jpg'">
         <div class="action-buttons animate d-flex px-2">
-            <div class="edit button" tooltip="Edit" placement="right"><mat-icon>edit</mat-icon></div>
+            <div class="edit button" tooltip="Edit" placement="right" (click)="editBike()"><mat-icon>edit</mat-icon></div>
             <div class="delete button" tooltip="Delete" placement="left" (click)="deleteBike(bike.id)"><mat-icon>delete</mat-icon></div>
         </div>
     </div>

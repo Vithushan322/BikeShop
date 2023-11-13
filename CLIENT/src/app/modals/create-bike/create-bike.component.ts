@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dial
 import { ToastrService } from 'ngx-toastr';
 import { BikeType } from 'src/app/models/bike';
 import { BikeService } from 'src/app/services/bike.service';
-import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from '../../components/shared/confirmation-modal/confirmation-modal.component';
 
 @Component({
   selector: 'app-create-bike',
@@ -42,7 +42,6 @@ export class CreateBikeComponent implements OnInit {
   }
 
   onSubmit() {
-    // console.log('createBikeForm', this.createBikeForm?.value);
     this.bikeService.createBike(this.createBikeForm.value).subscribe({
       next: () => {
         this.toaster.success("Bike created!");

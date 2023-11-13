@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
-import { ConfirmationModalComponent } from 'src/app/modals/confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from 'src/app/components/shared/confirmation-modal/confirmation-modal.component';
+import { EditBikeComponent } from 'src/app/modals/edit-bike/edit-bike.component';
 import { Bike } from 'src/app/models/bike';
 import { BikeService } from 'src/app/services/bike.service';
 
@@ -12,7 +13,7 @@ import { BikeService } from 'src/app/services/bike.service';
 })
 export class BikeCardComponent implements OnInit {
   @Input() bike: Bike | undefined;
-  @Output() bikeDeletion = new EventEmitter();
+  @Output() bikeUpdate = new EventEmitter();
 
   constructor(
     private bikeService: BikeService,
@@ -40,11 +41,24 @@ export class BikeCardComponent implements OnInit {
         this.bikeService.deleteBike(bikeId).subscribe({
           next: response => {
             this.toaster.success("Bike deleted!");
-            this.bikeDeletion.emit(true);
+            this.bikeUpdate.emit(true);
           },
           error: error => this.toaster.error(error.error)
         });
       }
+    });
+  }
+
+  editBike(): void {
+    const dialogRef = this.dialog.open(EditBikeComponent, {
+      width: '600px',
+      disableClose: true,
+      backdropClass: 'backdropBackground',
+      data: this.bike
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) this.bikeUpdate.emit(true);
     });
   }
 }

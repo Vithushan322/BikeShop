@@ -9,8 +9,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ToastrModule } from 'ngx-toastr';
-
-
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [],
@@ -22,7 +21,8 @@ import { ToastrModule } from 'ngx-toastr';
     TooltipModule.forRoot(),
     PaginationModule,
     NgxSpinnerModule.forRoot({ type: 'ball-newton-cradle' }),
-    MatDialogModule
+    MatDialogModule,
+    TabsModule.forRoot()
   ],
   exports: [
     MatIconModule,
@@ -31,7 +31,8 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule,
     TooltipModule,
     PaginationModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    TabsModule
   ]
 })
 export class SharedModule { }

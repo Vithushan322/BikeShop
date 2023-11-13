@@ -8,20 +8,20 @@
     align-items: center;
     justify-content: space-between;
 
-    button{
+    button {
         width: 50%;
         text-align: center;
         cursor: pointer;
     }
 
-    .cancel{
+    .cancel {
         border: 2px solid red;
         color: red;
         margin-right: 2px;
-
+        background-color: #fff;
     }
 
-    .create{
+    .create {
         background-color: green;
         border: 2px solid green;
         color: #fff;

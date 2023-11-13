@@ -1,0 +1,80 @@
+<!-- <h1 mat-dialog-title>Create a new bike</h1> -->
+<div class="content">
+    <div class="title">Edit bike: {{bike.name | titlecase}}</div>
+    <tabset class="bike-tabset">
+        <tab heading="Details">
+            <form [formGroup]="editBikeForm" autocomplete="off">
+                <div class="input-field">
+                    <div class="name">Name</div>
+                    <input class="form-control"
+                        [class.is-invalid]="editBikeForm.get('name')?.errors && editBikeForm.get('name')?.touched"
+                        type="text" formControlName="name" placeholder="Name">
+                </div>
+                <div class="input-field">
+                    <div class="name">Ref #</div>
+                    <input class="form-control"
+                        [class.is-invalid]="editBikeForm.get('referenceNumber')?.errors && editBikeForm.get('referenceNumber')?.touched"
+                        type="text" formControlName="referenceNumber" placeholder="Reference #">
+                </div>
+                <div class="input-field">
+                    <div class="name">Price</div>
+                    <input class="form-control"
+                        [class.is-invalid]="editBikeForm.get('price')?.errors && editBikeForm.get('price')?.touched"
+                        type="number" formControlName="price" placeholder="Price">
+                </div>
+                <div class="input-field">
+                    <div class="name">Discounted Price</div>
+                    <input class="form-control"
+                        [class.is-invalid]="editBikeForm.get('discountedPrice')?.errors && editBikeForm.get('discountedPrice')?.touched"
+                        type="number" formControlName="discountedPrice" placeholder="Discounted Price">
+                </div>
+                <div class="input-field">
+                    <div class="name">Bike Type</div>
+                    <select id="bikes" class="form-control"
+                        [class.is-invalid]="editBikeForm.get('bikeType')?.errors && editBikeForm.get('bikeType')?.touched"
+                        formControlName="bikeType">
+                        <option value="volvo" *ngFor="let bikeType of keys(bikeTypes)" [value]="bikeType">{{bikeType}}
+                        </option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <div class="name">Description</div>
+                    <textarea class="form-control"
+                        [class.is-invalid]="editBikeForm.get('description')?.errors && editBikeForm.get('description')?.touched"
+                        type="text" formControlName="description" placeholder="Description">
+                    </textarea>
+                </div>
+                <div class="input-field">
+                    <div class="name">Quantity</div>
+                    <input class="form-control"
+                        [class.is-invalid]="editBikeForm.get('quantity')?.errors && editBikeForm.get('quantity')?.touched"
+                        type="number" formControlName="quantity" placeholder="Quantity">
+                </div>
+                <div class="input-field">
+                    <div class="name">Color</div>
+                    <input class="form-control"
+                        [class.is-invalid]="editBikeForm.get('color')?.errors && editBikeForm.get('color')?.touched"
+                        type="text" formControlName="color" placeholder="Colour">
+                </div>
+                <div class="input-field">
+                    <div class="name">Location</div>
+                    <input class="form-control"
+                        [class.is-invalid]="editBikeForm.get('location')?.errors && editBikeForm.get('location')?.touched"
+                        type="text" formControlName="location" placeholder="Location">
+                </div>
+                <div class="button-area pt-2 d-flex">
+                    <button class="cancel" (click)="onCancel()">
+                        Cancel
+                    </button>
+                    <button class="update" type="submit" (click)="onSubmit()"
+                        [ngClass]="{'update-disbaled': editBikeForm.pristine || !editBikeForm.valid}"
+                        [disabled]="editBikeForm.pristine || !editBikeForm.valid ? 'disabled': null">
+                        Update
+                    </button>
+                </div>
+            </form>
+        </tab>
+
+        <tab heading="Images">Photos</tab>
+    </tabset>
+</div>

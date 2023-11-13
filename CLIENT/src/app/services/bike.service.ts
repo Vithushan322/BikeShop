@@ -27,7 +27,7 @@ export class BikeService {
 
         const pagination = response.headers.get('Pagination');
 
-        if(pagination) this.paginatedResult.pagination = JSON.parse(pagination);
+        if (pagination) this.paginatedResult.pagination = JSON.parse(pagination);
 
         return this.paginatedResult;
       })
@@ -38,11 +38,15 @@ export class BikeService {
     return this.http.get<Bike>(this.baseUsrl + 'bike/' + bikeId);
   }
 
-  createBike(bike:Bike){
+  createBike(bike: Bike) {
     return this.http.post<Bike>(this.baseUsrl + 'bike', bike);
   }
 
-  deleteBike(bikeId: number){
+  updateBike(bikeId: number, bike: Bike) {
+    return this.http.put<Bike>(this.baseUsrl + `bike/${bikeId}`, bike);
+  }
+
+  deleteBike(bikeId: number) {
     return this.http.delete<Bike>(this.baseUsrl + 'bike/' + bikeId);
   }
 }

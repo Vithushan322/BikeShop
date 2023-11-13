@@ -19,7 +19,8 @@ import { AnalyticsComponent } from './components/dashboard/analytics/analytics.c
 import { SuppliersComponent } from './components/dashboard/suppliers/suppliers.component';
 import { BikeCardComponent } from './components/dashboard/inventory/bike-card/bike-card.component';
 import { CreateBikeComponent } from './modals/create-bike/create-bike.component';
-import { ConfirmationModalComponent } from './modals/confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from './components/shared/confirmation-modal/confirmation-modal.component';
+import { EditBikeComponent } from './modals/edit-bike/edit-bike.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ConfirmationModalComponent } from './modals/confirmation-modal/confirma
     SuppliersComponent,
     BikeCardComponent,
     CreateBikeComponent,
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    EditBikeComponent
   ],
   imports: [
     SharedModule,

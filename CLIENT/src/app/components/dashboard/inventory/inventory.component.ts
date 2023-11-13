@@ -39,7 +39,7 @@ export class InventoryComponent implements OnInit {
     });
   }
 
-  bikeDeletion(event: boolean) {
+  bikeUpdate(event: boolean) {
     this.getBikeList();
   }
 
@@ -50,7 +50,7 @@ export class InventoryComponent implements OnInit {
     }
   }
 
-  openDialog(): void {
+  createBike(): void {
     const dialogRef = this.dialog.open(CreateBikeComponent, {
       width: '300px',
       disableClose: true,

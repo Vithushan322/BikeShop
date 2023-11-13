@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { ConfirmationModalComponent } from 'src/app/modals/confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from 'src/app/components/shared/confirmation-modal/confirmation-modal.component';
 import { AccountService } from 'src/app/services/account.service';
 
 @Component({

@@ -1,3 +1,7 @@
+.content {
+    margin: 1rem;
+}
+
 .title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -7,11 +11,21 @@
 .input-field {
     padding-bottom: 8px;
     width: 100%;
+    display: flex;
+
+    .name {
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        // text-align: right;
+        // justify-content: center;
+        width: 17%;
+    }
 
     input,
     textarea,
     select {
-        width: 100%;
+        width: 83%;
     }
 
     textarea {
@@ -45,14 +59,14 @@
         background-color: #fff;
     }
 
-    .create{
+    .update{
         background-color: green;
         border: 2px solid green;
         color: #fff;
         margin-left: 2px;
     }
 
-    .create-disbaled{
+    .update-disbaled{
         cursor: not-allowed;
         color: green;
         background-color: transparent;

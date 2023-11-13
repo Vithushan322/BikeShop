@@ -39,9 +39,6 @@ const routes: Routes = [
       },
       {
         path: 'suppliers', component: SuppliersComponent
-      },
-      {
-        path: 'create-bike', component: CreateBikeComponent
       }
     ]
   },

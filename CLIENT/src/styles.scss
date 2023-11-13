@@ -55,3 +55,51 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   // background-color: #caa4a4;
   // opacity: 0.7 !important;
 }
+
+// Tabs
+.tab-panel {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.nav-tabs > li.open, .bike-tabset > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+
+.bike-tabset > .nav-tabs > li.open > a, .bike-tabset > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+
+.bike-tabset > .nav-tabs > li.open > a > i, .bike-tabset > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+
+.bike-tabset > .nav-tabs > li.open .dropdown-menu, .bike-tabset > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+
+.bike-tabset > .nav-tabs > li.active {
+  border-bottom: 4px solid #E95420;
+  position: relative;
+}
+
+.bike-tabset > .nav-tabs > li.active > a {
+  border: 0 !important;
+  color: #333333;
+}
+
+.bike-tabset > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+
+.bike-tabset > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
