@@ -11,7 +11,6 @@ To run the project locally, please clone the repository in your local directory 
 
 
 ## If you choose to run ***only*** the front-end application, navigate to the **CLIENT** folder and follow the following steps:
-__Following steps are completed in Visual Studio Code.__
 
 > [!NOTE]
 > Before starting, make sure that you can run Angular 16 project locally. Refer [this link](https://kinsta.com/knowledgebase/install-angular/) if you need help.
