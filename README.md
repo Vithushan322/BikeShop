@@ -21,7 +21,7 @@ To run the project locally, please clone the repository in your local directory 
 4. Use the following credentials to login to the application: **Email**: admin@gmail.com and **Password**: Admin
 
 > [!IMPORTANT]
-> If the weather widget is next to the user name in the nav bar is not showing up, please create an account @[openwaether](https://openweathermap.org/api) to get an API key and update the ***weatherAPIKey*** in both the environment files as above.
+> If the [weather widget](https://drive.google.com/file/d/1e0LW7IfmxDeBs0G2Kz9VX2Hh4MBLM7H2/view?usp=sharing) next to the user name in the nav bar is not showing up, please create an account @[openwaether](https://openweathermap.org/api) to get an API key and update the ***weatherAPIKey*** in both the environment files as above.
 
 ## To run the back-end application, navigate to the **API** folder (or open the project using the solution file) and follow the following steps:
 *I would suggest doing below steps in Visual Studio*
