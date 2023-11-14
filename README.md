@@ -17,6 +17,9 @@ __Following steps are completed in Visual Studio Code.__
 > Before starting, make sure that you can run Angular 16 project locally. Refer [this link](https://kinsta.com/knowledgebase/install-angular/) if you need help.
 
 1. Run `npm i` in the terminal to install the required packages from the _package.json_ file
-2. As you are only running the front-end application, to connect to an API, replace ***apiUrl*** of both the environment files (.\src\environments) with ***'https://bikeapp.fly.dev/api/'***
+2. As you are only running the front-end application, to connect to an API, replace ***apiUrl*** in both the environment files (.\src\environments) with ***'https://bikeapp.fly.dev/api/'***
 3. Run `ng g -o` to build and automatically open the application in the default browser **OR** `ng s` to build and manually open using url
 4. Use the following credentials to login to the application: **Email**: admin@gmail.com and **Password**: Admin
+
+> [!IMPORTANT]
+> If the weather widget is next to the user name in the nav bar is not showing up, please create an account @[openwaether](https://openweathermap.org/api) to get an API key and update the ***weatherAPIKey*** in both the environment files as above.
