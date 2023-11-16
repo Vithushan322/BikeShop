@@ -25,11 +25,23 @@ export class AccountService {
         if (response) {
           response.isRememberUser = isRememberUser;
           console.log(response);
-          
+
           this.setCurrentUser(response)
           this.router.navigate(['dashboard']);
         }
       })
+    );
+  }
+
+  registerUser() {
+    return this.http.post<any>(this.baseUrl + 'account/register',
+      {
+        email: "vithushan.vn@gmail.com",
+        password: "Admin",
+        firstName: "Vithushan",
+        lastName: "Navanathan",
+        location: "Ottawa"
+      }
     );
   }
 

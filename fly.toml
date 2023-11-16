@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for bikeapp on 2023-11-13T11:15:03-05:00
+# fly.toml app configuration file generated for bikeapp on 2023-11-13T13:32:28-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -10,9 +10,9 @@ primary_region = "ewr"
   image = "vithushann/bikeapp:latest"
 
 [env]
-  ASPNETCORE_URLS="http://+:8080"
-  CloudinarySettings__CloudName="dislvfnwa"
-  CloudinarySettings__ApiKey="463824116668339"
+  ASPNETCORE_URLS = "http://+:8080"
+  CloudinarySettings__ApiKey = "463824116668339"
+  CloudinarySettings__CloudName = "dislvfnwa"
 
 [http_service]
   internal_port = 8080

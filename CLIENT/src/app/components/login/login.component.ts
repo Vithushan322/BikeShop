@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { AccountService } from 'src/app/services/account.service';
 
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 
@@ -11,7 +11,7 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
   model: any = {};
   isPasswordHidden = true;
   isRememberMe = true;
@@ -28,21 +28,24 @@ export class LoginComponent implements OnInit{
     this.initializeForm();
   }
 
-  login(){
+  login() {
     this.accountService.logIn(this.loginForm.value, this.isRememberMe).subscribe({
-      next: () => {},
+      next: () => { },
       error: error => this.toaster.error(error.error)
     });
   }
 
-  initializeForm(){
+  initializeForm() {
     this.loginForm = this.fb.group({
-      email: ['', [Validators.required,Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(5),Validators.maxLength(15)]]
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(15)]]
     });
   }
 
-  toDo(){
-    this.toaster.error('Need to implement!')
+  toDo() {
+    this.accountService.registerUser().subscribe({
+      next: (response) => { this.toaster.success('Registered')},
+      error: error => this.toaster.error(error.error)
+    });
   }
 }
